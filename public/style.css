@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(141, 141, 223);
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    width: 800px
+}
+
+fieldset {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+

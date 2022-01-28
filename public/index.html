@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Requisições ao Banco de Dados</title>
+</head>
+<body>
+    <header>
+        <h1>Realize Requisições ao banco de dados</h1>
+    </header>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>Adicione um novo usuário</legend>
+
+                <label for="addid">Ingresse o ID</label>
+                <input type="number" id="addid" name="id">
+
+                <label for="addname">Ingresse o nome do produto</label>
+                <input type="text" id="addname" name="nome">
+                <button type="button" id="postButton">Adicionar</button>
+            </fieldset>
+            <fieldset>
+                <legend>Acessar a base de dados</legend>
+
+                <button type="button" id="getAll">Ver</button>
+            </fieldset>
+            <fieldset>
+                <legend>Pesquisa por id</legend>
+
+                <label for="idsearch">Ingresse o ID para pesquisar</label>
+                <input type="number" name="" id="idsearch">
+
+                <button type="button" id="getSearch">Pesquisar</button>
+            </fieldset>
+
+            <fieldset>
+                <legend>Deletar produto pelo ID</legend>
+
+                <label for="idDel">Ingresse o ID do produto</label>
+                <input type="number" name="" id="idDel">
+
+                <button type="button" id="delete">Deletar</button>
+            </fieldset>
+
+            <fieldset>
+                <legend>Update do registro de produtos</legend>
+
+                <label for="updateId">Escreva o id do produto</label>
+                <input type="number" name="" id="updateId">
+
+                <label for="updateNome">Nome a alterar</label>
+                <input type="text" name="" id="updateNome">
+
+                <button type="button" id="updateButton">Atualizar</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2" id="tableHeader">Resultados</th>
+            </tr>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>
